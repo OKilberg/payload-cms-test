@@ -16,6 +16,7 @@ import Nav from './globals/Nav'
 import Pages from './collections/Pages'
 
 export default buildConfig({
+  serverURL: process.env.PAYLOAD_URL,
   admin: {
     user: Users.slug,
     bundler: webpackBundler(),
